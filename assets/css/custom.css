@@ -1,0 +1,2899 @@
+6
+@font-face {
+    font-family: 'kanitbold';
+    src: url('../fonts/kanit/kanit-bold-webfont.woff2') format('woff2'),
+         url('../fonts/kanit/kanit-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kanitlight';
+    src: url('../fonts/kanit/kanit-light-webfont.woff2') format('woff2'),
+         url('../fonts/kanit/kanit-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kanitmedium';
+    src: url('../fonts/kanit/kanit-medium-webfont.woff2') format('woff2'),
+         url('../fonts/kanit/kanit-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kanitregular';
+    src: url('../fonts/kanit/kanit-regular-webfont.woff2') format('woff2'),
+         url('../fonts/kanit/kanit-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family:'kanitregular';
+    height: 100vh;
+    background-image:url("/phama/assets/images/pharma-bg.jpg"); 
+    background-size: cover;
+}
+
+.wrapper {
+    min-height: calc(100vh - 320px);
+}
+
+.container{
+    background-color: white;
+}
+
+
+
+
+/*----------- ANIMATE ------------------*/
+.animated.fadeInUp{
+    animation-duration:1.5s;
+    animation-delay: 0.5s;
+}
+
+.animated.fadeInDown{
+    animation-duration: 1s;
+}
+
+.animated.fadeIn{
+    animation-duration: 1s;
+}
+
+.animated.slideInUp{
+    animation-duration: 2s;
+    transition: width 2s;
+}
+/*----------- END ANIMATE ------------------*/
+
+
+
+
+
+/*----------- NAVBAR 1 ------------------*/
+.navbar-nav a{
+    color: #4d4d4d;
+    font-size: 20px;
+    margin:20px;
+}
+
+.navbar-nav a:hover{
+    color:#81c784;
+    font-size: 20px;
+}
+
+.navbar-nav .active .nav-link{
+    color: #81c784;
+}
+
+.btn-nav{
+    background-color:#f7931e;
+    border:none;
+    color: #fff;
+    font-size: 20px;
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 17px;
+    transition: all 0.7s;
+}
+
+.btn-nav:hover{
+    background-color:#fff;
+    border:none;
+    color: #f7931e;
+    border:2px solid #f7931e;
+    font-size: 20px;
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    
+}
+
+.nav-logo{
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    text-align: center
+     -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+/*----------- END NAVBAR 1 --------------*/
+
+/*-------------  NAVBAR 2 ----------------*/
+.dropbtn {
+    background-color: #f7931e;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin:20px;
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;   
+    left:40px;
+    margin:-20px;
+}
+
+.dropdown-content a {
+    color: #4d4d4d;
+    font-size: 17px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #81c784;
+    font-size: 17px;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+    border:2px solid #f7931e;
+    color: #f7931e;
+    font-size: 20px;
+    border-radius: 5px;
+}
+/*----------- END NAVBAR 2 --------------*/
+
+
+/*-----------  MODAL --------------*/
+.nav-pills .nav-item .active{
+    font-size: 20px;
+    font-family: 'kanitmedium';
+    border-bottom: 2px solid #81c784;
+    color: #333;
+}
+
+.modal-nav-link {
+    text-align: center;
+    font-size: 20px;
+    color: #4d4d4d !important;
+    font-family: 'kanitlight';
+    margin-left: 93px;
+    margin-right: 75px;
+    font-family: 'kanitmedium';
+}
+
+.modal-nav-link:hover {
+    text-align: center;
+    color: #999!important;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'kanitmedium';
+}
+
+.btn-modal-1{
+    background-color:#f7931e;
+    border:none;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    height:50px;
+    border-radius: 5px;
+    transition: all 0.7s;
+}
+
+.btn-modal-1:hover{
+    background-color:#fff;
+    border:none;
+    color: #f7931e;
+    border:2px solid #f7931e;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.btn-modal-2{
+    background-color:#2471A3;
+    border:none;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.7s;
+}
+
+.btn-modal-2:hover{
+    background-color:#fff;
+    border:none;
+    color: #2471A3;
+    font-size: 20px;
+    border:2px solid #2471A3;
+    width: 100%;
+    height:50px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.modal-form{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border:1px solid#666;
+    color: #333;
+    font-size: 18px;
+}
+
+.modal-header{
+    padding: 0px;
+    padding-top: 13px;
+}
+/*---------  END MODAL ----------*/
+
+
+
+
+/*----------- FOOTER ----------------*/
+.footer-bg{
+    background-color: #81c784;
+    border-top: 10px solid #77b777;
+}
+
+.footer-font-h{
+    font-size: 24px;
+    color: white;
+    font-family: 'kanitlight';
+}
+
+.footer-font{
+    font-size: 17px;
+    color: #F8F9F9;
+    font-family: 'kanitlight';
+}
+
+.footer-magin-top{
+    margin-top: 5px;
+}
+
+.footer-magin-top2{
+    margin-top: 6px;
+}
+
+.footer-margin-left{
+    margin-left: 8rem;
+}
+
+/*----------- END FOOTER --------------------*/
+
+
+
+/*-------------------------------------
+-----------------HOME-----------------
+---------------------------------------*/
+.home-w-h-1{
+    width: 100%;
+    height: auto;
+}
+
+.home-padding{
+    padding: 50px;
+}
+
+.home-padding-top{
+    padding-top: 170px;
+}
+
+.home-padding-bottom{
+    padding-bottom: 300px;
+}
+
+.home-w-h-2{
+    width: 108px;
+    height: 70px;
+}
+
+.home-font-h{
+    color: #4d4d4d;
+    font-size: 30px;
+    font-family: 'kanitmedium';
+}
+
+.home-font-1{
+    color: #4d4d4d;
+    font-size: 20px;
+    font-family: 'kanitlight';
+}
+
+.home-font-2{
+    color: #4d4d4d;
+    font-size: 34px;
+    margin-top: 13px;
+    font-family: 'kanitmedium';
+}
+
+.home-font-3{
+    color:white;
+    font-size: 22px;
+    font-family: 'kanitlight';
+    overflow: hidden;
+    height: 35px;
+}
+
+.home-font-4{
+    color: white;
+    font-size: 16px;
+    font-family: 'kanitlight';
+    overflow: hidden;
+    height: 45px;
+}
+
+.home-font-5{
+    color: #4d4d4d;
+    font-size: 18px;
+}
+
+.home-font-6{
+    color: #E74C3C;
+    font-size: 18px;
+}
+
+.home-font-7{
+    color: #4d4d4d;
+    font-size: 22px;
+    font-family: 'kanitmedium';
+}
+
+.home-s{
+    font-size: 10px;
+}
+
+.home-bg{
+    background-image: url("/phama/assets/images/pharma-03.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 770px;
+    margin-bottom: 100px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.overlay2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    background-color:#77b777;
+    width: 100%;
+    height: 100%;
+}
+
+.home-bg2{
+    background-color: transparent;
+}
+
+.home-m-t{
+    margin-top: 50px;
+}
+
+.home-m-t2{
+    margin-top: 50px;
+}
+
+.home-m-t3{
+    margin-top: 50px;
+}
+
+.home-m-t4{
+    margin-top: 70px;
+}
+
+.home-m-t5{
+    margin-top: 25px;
+}
+
+.home-m-t-btn{
+    margin-top: 25px;
+}
+
+.home-block{
+    height: 400px;
+    width: 100%;
+    box-shadow:  3px 3px 15px #888888;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #fff;
+  text-align: left;
+  padding-top: 30px;
+  margin-top: -150px
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 400px;
+  margin-top: -150px
+}
+
+.home-block:hover .overlay {
+  opacity: 1;
+}
+
+.text-block {
+    position: absolute;
+    width: 100%;
+    height:100px; 
+    padding-top: 10px;
+    background-color: #f7931e;
+    color: white;
+    text-align: center;
+    opacity: 0.9;
+    font-size: 20px;
+    margin-top: -100px;
+}
+
+.btn-home-1{
+    background-color:#f7931e;
+    border:none;
+    color: #fff;
+    font-size: 20px;
+    width: 200px;
+    height:50px;
+    border-radius: 7px;
+}
+
+.btn-home-1:hover{
+    background-color:#fff;
+    border:none;
+    color: #f7931e;
+    border:2px solid #f7931e;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.modal-block{
+     min-height: calc(100vh - 60px);
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 360px;
+}
+
+.home-modal-font1{
+    font-size: 22px;
+    color: #4d4d4d;
+    padding-top: 70px;
+    text-align: right;
+    font-family: 'kanitmedium';
+}
+
+.home-modal-font2{
+    font-size: 17px;
+    color: #4d4d4d;
+}
+
+.home-modal-font3{
+    font-size: 17px;
+    color: #4d4d4d;
+}
+
+.modal-img-size{
+    width:60px; 
+    height:60px;
+    margin-top: 40px;
+}
+
+.modal-w-h{
+    width:360px;
+    height:280px;
+    border-radius: 0px;
+}
+
+.modal-padding{
+    padding: 10px;
+}
+
+.home-modal-m-l{
+    padding-left: 20px;
+}
+.home-modal-m-l2{
+    padding-left: 5px;
+}
+.home-modal-m-l3{
+    padding-left: 20px;
+}
+
+/*-------------------------------------
+-------------END HOME-----------------
+---------------------------------------*/
+
+/*-------------------------------------
+------------- ARTICLE -----------------
+---------------------------------------*/
+.article-img-size{
+    width: 100%;
+    height: auto;
+}
+
+.article-pb{
+    padding-bottom: 150px;
+}
+
+.article-font{
+    font-size: 17px;
+    color: #4d4d4d;
+}
+
+.article-font2{
+    font-size: 17px;
+    color: #f7931e;
+    text-decoration: none;
+}
+
+.article-font2:hover{
+    font-size: 20px;
+    color: #E67E22;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.article-overflow{
+    overflow: hidden;
+    height: 100px;
+}
+
+/*-------------------------------------
+------------- END ARTICLE --------------
+---------------------------------------*/
+
+
+/*-------------------------------------
+------------- ARTICLE2 -----------------
+---------------------------------------*/
+.article2-padding{
+    padding: 20px;
+}
+
+.article2-img-size{
+    width: 100%;
+    height: 100%;
+}
+
+.article2-pb{
+    padding-bottom: 100px;
+}
+
+.article2-font{
+    font-size: 17px;
+    color: #4d4d4d;
+}
+
+.article2-font2{
+    font-size: 17px;
+    color: #f7931e;
+}
+
+.article2-font2:hover{
+    font-size: 20px;
+    color: #E67E22;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.article2-overflow{
+    overflow: hidden;
+    height: 120px;
+}
+
+.article2-border-bottom{
+    border-bottom: 1px solid #888;
+}
+
+.article2-m-t2{
+    padding-top: 90px;
+}
+
+.article2-m-t3{
+    padding-top: 30px;
+}
+/*-------------------------------------
+------------- END ARTICLE2 --------------
+---------------------------------------*/
+
+
+/*---------------------------------
+--------------- EDIT --------------
+----------------------------------*/
+.edit-border{
+    border-radius: 0px;
+}
+
+.edit-font1{
+    font-size: 30px;
+    color: #4d4d4d;
+    font-family: 'kanitmedium';
+    text-align: center;
+}
+
+.edit-font2{
+    font-size: 22px;
+    color: #4d4d4d;
+}
+
+.edit-border-bottom{
+    border-bottom: 2px solid  #4d4d4d;
+}
+
+.edit-form{
+    width: 100%;
+    height: 50px;
+    border:1px solid #A6ACAF; 
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'kanitlight';
+    color: #4d4d4d;
+}
+
+.edit-p-t{
+    padding-top:100px; 
+}
+
+.edit-p-b{
+    padding-bottom:200px; 
+}
+
+.btn-edit{
+    background-color:#f7931e;
+    border:none;
+    color: #fff;
+    font-size: 20px;
+    width: 170px;
+    height:50px;
+    border-radius: 5px;
+}
+
+.btn-edit:hover{
+    background-color:#fff;
+    border:none;
+    color: #f7931e;
+    border:2px solid #f7931e;
+    font-size: 20px;
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.edit-padding{
+    padding: 30px;
+}
+/*---------------------------------
+------------- END EDIT --------------
+----------------------------------*/
+
+
+/*--------------------------------
+------------- COURSE ------------
+----------------------------------*/
+.course-font1{
+    font-size: 30px;
+    color: #4d4d4d;
+    font-family: 'kanitmedium';
+    text-align: center;
+}
+
+.course-font2{
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    height: 37px;
+}
+
+.course-font3{
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    font-family: 'kanitlight';
+    overflow: hidden;
+    height: 43px;
+}
+
+.course-background{
+    background-color:#f7931e; 
+}
+
+.course-p-t{
+    padding-top:140px; 
+}
+
+.course-p-b{
+    padding-bottom:295px; 
+}
+
+.course-img-size{
+    width: 100%;
+    height: auto;
+}
+
+.course-padding{
+    padding: 20px;
+}
+
+.course-padding2{
+    padding: 20px;
+}
+
+.course-border-bottom{
+    border-bottom: 4px solid  #4d4d4d;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.item img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: green;
+}
+
+.item:hover img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 0.6s;
+  opacity: 0.7;
+}
+/*--------------------------------
+----------- END COURSE ------------
+----------------------------------*/
+
+
+
+/*----------------------------------
+----------- COURSE (2) ------------
+-----------------------------------*/
+.course2-font1{
+    font-size: 25px;
+    color: #4d4d4d;
+    font-family: 'kanitmedium';
+}
+
+.course2-font2{
+    font-size: 20px;
+    color: #626567;
+    font-family: 'kanitlight';
+}
+
+.course2-font3{
+    font-size: 17px;
+    color: #626567;
+    font-family: 'kanitlight';
+}
+
+.course2-p-t{
+    padding-top:140px; 
+}
+
+.course2-p-t2{
+    padding-top:50px; 
+}
+
+.course2-p-t3{
+    padding-top:3px;  
+}
+
+.course2-p-b{
+    padding-bottom:295px; 
+}
+
+.course2-p-b2{
+    padding-bottom:50px; 
+}
+
+.course2-padding{
+    padding: 50px;
+}
+
+.course2-border-bottom{
+    border-bottom: 4px solid #4d4d4d;
+}
+
+.course2-iframe-size{
+    width: 100%;
+    height: 480px;
+    border:none;
+}
+
+.course2-border-left{
+    border-left: 4px solid #f7931e;
+}
+
+.action:hover{
+    text-decoration: none;
+    background-color: #D5F5E3;
+    transition: all 1s;
+    padding-left: 30px;
+    padding-right: 120px;
+    padding-top: 10px;
+}
+
+.action-overflow{
+    overflow: hidden;
+    height: 80px;
+    padding-top: 10px;
+}
+/*----------------------------------
+---------- END COURSE (2) -----------
+------------------------------------*/
+
+
+
+@media(max-width: 1366px){
+    /*---------------------------
+    ------- NAVBAR 1366 ---------
+    -----------------------------*/
+    .nav-logo{
+        width: 150px;
+        height: 160px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+   
+    /*---------------------------
+    ------- END NAVBAR 1366 -----
+    -----------------------------*/
+
+    /*---------------------------
+    --------- FOOTER 1366 -------
+    -----------------------------*/
+    .footer-margin-left{
+        margin-left: 4rem;
+    }
+    /*----------------------------
+    -------- END FOOTER 1366 -----
+    ------------------------------*/
+
+    /*----------------------------
+    -------- HOME 1366 -----------
+    ------------------------------*/
+    /*----------------------------
+    -------- END HOME 1366 -------
+    ------------------------------*/
+
+}
+
+
+
+@media(max-width: 1024px){
+    .wrapper {
+         min-height: calc(100vh - 400px);
+    }
+
+    /*--------------------------
+    --------- NAVBAR 1024 ------
+    ----------------------------*/
+   
+    /*--------------------------
+    ----- END NAVBAR 1024 ------
+    ----------------------------*/
+
+    /*--------------------------
+    -------- FOOTER 1024 -------
+    ----------------------------*/
+    .footer-margin-left{
+        margin-left: 1rem;
+    }
+    /*--------------------------
+    ----- END FOOTER 1024 ------
+    ----------------------------*/
+
+
+    /*--------------------------
+    --------- HOME 1024 --------
+    ----------------------------*/
+    .home-padding-top{
+        padding-top: 120px;
+    }
+
+    .home-bg{
+        background-image: url("/phama/assets/images/pharma-03.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 720px;
+        margin-bottom: 100px;
+    }
+
+    .home-m-t{
+        margin-top: 20px;
+    }
+
+    .home-m-t5{
+        margin-top: 15px;
+    }
+
+    .home-m-t-btn{
+        margin-top: 15px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: 1s ease;
+      background-color: #fff;
+      text-align: left;
+      width: 430px;
+      margin-left: 10px;
+      padding-top: 30px;
+    }
+
+    .home-block{
+      height: 400px;
+      width: 430px;
+      box-shadow:  3px 3px 15px #888888;
+      margin-left: 10px;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: 400px;
+    }
+
+    .home-block:hover .overlay {
+      opacity: 1;
+    }
+
+    .text-block {
+        position: absolute;
+        width: 431px;
+        height:100px; 
+        padding-top: 10px;
+        background-color: #f7931e;
+        color: white;
+        text-align: center;
+        opacity: 0.9;
+        font-size: 20px;
+        margin-top: -100px;
+    }
+
+    .btn-home-1{
+        background-color:#f7931e;
+        border:none;
+        color: #fff;
+        font-size: 20px;
+        width: 200px;
+        height:50px;
+        border-radius: 7px;
+    }
+
+    .btn-home-1:hover{
+        background-color:#fff;
+        border:none;
+        color: #f7931e;
+        border:2px solid #f7931e;
+        font-size: 20px;
+        width: 200px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .home-m-t5{
+        margin-top: 20px;
+    }
+
+    .home-m-t-btn{
+        margin-top: 25px;
+    }
+    /*-----------------------------
+    --------- END HOME 1024 -------
+    -------------------------------*/
+
+
+    /*-------------------------------------
+    ------------- ARTICLE 1024 --------------
+    ---------------------------------------*/
+    .article-img-size{
+        width: 100%;
+        height: auto;
+    }
+
+    .article-pb{
+        padding-bottom: 330px;
+    }
+    /*------------------------------------
+    ---------- END ARTICLE 1024 ----------
+    --------------------------------------*/
+
+
+    /*-----------------------------------
+    ----------- ARTICLE2 1024 --------------
+    --------------------------------------*/
+    .article2-img-size{
+        width: 100%;
+        height: 100%;
+    }
+
+    .article2-m-t2{
+        padding-top: 10px;
+    }
+
+    .article2-overflow{
+        overflow: hidden;
+        height: 30px;
+    }
+    /*----------------------------------
+    --------- END ARTICLE2 1024 ---------
+    --------------------------------------*/
+
+
+    /*----------------------------------
+    ------------  EDIT 1024 -------------
+    --------------------------------------*/
+         .edit-padding{
+        padding: 0px;
+    }
+    /*------------------------------------
+    ----------- END EDIT 1024 -------------
+    --------------------------------------*/
+}
+
+
+
+@media(max-width: 768px){
+    .wrapper {
+         min-height: calc(100vh - 270px);
+    }
+    /*--------------------------
+    -------- NAVBAR 768 --------
+    ----------------------------*/    
+    .navbar-nav a{
+        color: #4d4d4d;
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .navbar-nav a:hover{
+        color: #81c784;
+        font-size: 20px;
+    }
+
+    .btn-nav{
+        background-color:#f7931e;
+        border:none;
+        color: #fff;
+        font-size: 20px;
+        width: 200px;
+        height: 40px;
+        border-radius: 7px;
+        margin: 0px;
+        margin-top: 10px;s
+     }
+
+    .btn-nav:hover{
+        background-color:#fff;
+        border:none;
+        color: #f7931e;
+        border:2px solid #f7931e;
+        font-size: 20px;
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .nav-logo{
+        width: 150px;
+        height: 160px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .btn-nav2{
+        background-color:#fff;
+        border:none;
+        color: #f7931e;
+        font-size:22px;
+        width: 60px;
+        border:2px solid #f7931e;
+        height: 50px;
+        border-radius: 7px;
+        margin-left: 430px;
+    }
+
+    .btn-nav2:hover{
+        background-color:#fff;
+        border:none;
+        color: #E67E22;
+        border:2px solid #E67E22;
+        font-size: 22px;
+        width: 60px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    /*--------------------------
+    ------ END NAVBAR 768 ------
+    ----------------------------*/
+
+
+    /*----------------------------
+    -------- NAVBAR(2) 768 --------
+    ------------------------------*/    
+    .dropbtn {
+        background-color: #f7931e;
+        color: white;
+        font-size: 20px;
+        border: none;
+        margin:20px;
+        width: 200px;
+        height: 50px;
+        border-radius: 7px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;   
+        left:40px;
+        margin:-20px;
+        padding: 10px;
+    }
+
+    .dropdown-content a {
+        color: #4d4d4d;
+        font-size: 17px;
+        text-decoration: none;
+        display: block;
+        padding-top: 10px;
+    }
+
+    .dropdown-content a:hover {
+        color: #81c784;
+        font-size: 17px;
+        padding-top: 10px;
+    }
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {
+        background-color: #fff;
+        border:2px solid #f7931e;
+        color: #f7931e;
+        font-size: 20px;
+        border-radius: 7px;
+    }
+    /*----------------------------
+    ------- END NAVBAR 768 --------
+    ------------------------------*/    
+
+
+    /*----------------------------
+    --------- FOOTER 768 ----------
+    ------------------------------*/
+    .footer-font-h{
+        font-size: 24px;
+        color: white;
+        font-family: 'kanitlight';
+    }
+
+    .footer-font{
+        font-size: 17px;
+        color: #F0F3F4;
+        font-family: 'kanitlight';
+    }
+
+    .footer-margin-left{
+        margin-left: 0rem;
+    }
+    /*---------------------------
+    ------- END FOOTER 768 -------
+    -----------------------------*/
+
+
+    /*--------------------------
+    ---------- HOME 768 ---------
+    ----------------------------*/
+    .home-padding{
+        padding: 30px;
+    }
+
+    .home-font-h{
+        color: #4d4d4d;
+        font-size: 30px;
+        font-family: 'kanitmedium';
+    }
+
+    .home-font-1{
+        color: #4d4d4d;
+        font-size: 18px;
+        font-family: 'kanitlight';
+    }
+
+    .home-font-5{
+        color: #4d4d4d;
+        font-size: 16px;
+    }
+
+    .home-font-6{
+        color: #E74C3C;
+        font-size: 16px;
+    }
+
+    .home-font-7{
+        color: #4d4d4d;
+        font-size: 20px;
+        font-family: 'kanitmedium';
+    }
+
+    .home-m-t{
+        margin-top: 10px;
+    }
+
+    .home-m-t2{
+        margin-top: 70px;
+    }
+
+    .home-m-t3{
+        margin-top: 80px;
+    }
+
+    .home-m-t5{
+        margin-top: 7px;
+    }
+
+    .home-m-t-btn{
+        margin-top: 7px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: 1s ease;
+      background-color: #fff;
+      width: 320px;
+      padding-top: 5px;
+      margin-left: 15px;
+    }
+
+    .home-block{
+        height: 300px;
+        width: 320px;
+        box-shadow:  3px 3px 15px #888888;
+        margin-left: 15px;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: 300px;
+      margin-left: 0px;
+    }
+
+    .home-block:hover .overlay {
+       opacity: 1;
+    }
+
+    .text-block {
+        position: absolute;
+        width: 320px;
+        height:100px; 
+        padding-top: 10px;
+        background-color: #f7931e;
+        color: white;
+        text-align: center;
+        opacity: 0.9;
+        font-size: 20px;
+        margin-top: -100px;
+        margin-left: 0px;
+    }
+
+    .btn-home-1{
+        background-color:#f7931e;
+        border:none;
+        color: #fff;
+        font-size: 16px;
+        width: 200px;
+        height:40px;
+        border-radius: 7px;
+    }
+
+    .btn-home-1:hover{
+        background-color:#fff;
+        border:none;
+        color: #f7931e;
+        border:2px solid #f7931e;
+        font-size: 16px;
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .home-bg{
+        background-image: url("/phama/assets/images/pharma-03.jpg");
+        background-size: cover;
+        width: 100%;
+        height:548px;
+        margin-bottom: 150px;
+    }
+
+    .home-padding-top{
+        padding-top: 110px;
+    }
+    /*-----------------------------
+    ------- END HOME 768 ----------
+    -------------------------------*/
+
+
+    /*-----------------------------------
+    ----------- ARTICLE2 768 --------------
+    --------------------------------------*/
+    .article2-img-size{
+        width: 100%;
+        height: auto;
+    }
+
+    .article2-overflow{
+        overflow: hidden;
+        height:30px;
+    }
+    /*----------------------------------
+    --------- END ARTICLE2 768 ---------
+    --------------------------------------*/
+
+
+    /*---------------------------------
+    ----------- EDIT 768 --------------
+    ----------------------------------*/
+    .edit-p-t{
+        padding-top:100px; 
+    }
+
+    .edit-p-b{
+        padding-bottom:100px; 
+    }
+
+    .edit-padding{
+        padding: 0px;
+    }
+    /*--------------------------------
+    --------- END EDIT 768 -----------
+    ---------------------------------*/
+
+
+
+    /*------------------------------------
+    ----------- COURSE (2) 768 ------------
+    -------------------------------------*/
+    .course2-iframe-size{
+        width: 100%;
+        height: 380px;
+        
+    }
+    /*------------------------------------
+    --------- END COURSE (2) 768 ----------
+    --------------------------------------*/
+
+}
+
+
+@media(max-width: 414px){
+    /*--------------------------
+    ------ NAVBAR 414 ----------
+    ----------------------------*/ 
+    .navbar-nav a{
+        color: #4d4d4d;
+        font-size: 18px;
+        margin: 0px;
+    }
+
+    .navbar-nav a:hover{
+        color: #81c784;
+        font-size: 18px;
+    }
+
+    .btn-nav{
+        background-color:#f7931e;
+        border:none;
+        color: #fff;
+        font-size: 18px;
+        width: 200px;
+        height: 45px;
+        border-radius: 7px;
+        margin: 0px;
+        margin-top: 10px;
+     }
+
+    .btn-nav:hover{
+        background-color:#fff;
+        border:none;
+        color: #f7931e;
+        border:2px solid #f7931e;
+        font-size: 18px;
+        width: 200px;
+        height: 45px;
+        border-radius: 5px;
+    }
+
+    .nav-logo{
+        width: 100px;
+        height: 110px;
+        margin-top: 40px;
+        margin-left: -10px;
+    }
+
+    .btn-nav2{
+        background-color:#fff;
+        border:none;
+        color: #f7931e;
+        font-size: 22px;
+        width: 60px;
+        border:2px solid #f7931e;
+        height: 50px;
+        border-radius: 7px;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .btn-nav2:hover{
+        background-color:#fff;
+        border:none;
+        color: #E67E22;
+        border:2px solid #E67E22;
+        font-size: 22px;
+        width: 60px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    /*--------------------------
+    ------ END NAVBAR 414 ------
+    ----------------------------*/
+
+    /*-----------------------------
+    --------- NAVBAR (2) 414 --------
+    --------------------------------*/    
+    .dropbtn {
+        background-color: #f7931e;
+        color: white;
+        font-size: 17px;
+        border: none;
+        margin:20px;
+        width: 140px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;   
+        left:40px;
+        margin:-20px;
+    }
+
+    .dropdown-content a {
+        color: #4d4d4d;
+        font-size: 17px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        color: #81c784;
+        font-size: 17px;
+    }
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {
+        background-color: #fff;
+        border:2px solid #f7931e;
+        color: #f7931e;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    /*--------------------------------
+    ---------END NAVBAR (2) 414 --------
+    -----------------------------------*/
+
+
+    /*--------------------------
+    --------- MODAL 414 --------
+    ----------------------------*/
+    .nav-pills .nav-item .active{
+        font-size: 18px;
+        font-family: 'kanitmedium';
+        border-bottom: 2px solid #81c784;
+        color: #333;
+    }
+
+    .modal-nav-link {
+        text-align: center;
+        font-size: 18px;
+        color: #4d4d4d !important;
+        font-family: 'kanitlight';
+        margin-left: 83px;
+        margin-right: 75px;
+        font-family: 'kanitmedium';
+        margin-left:88px;
+        margin-right: 0px;
+    }
+
+    .modal-nav-link:hover {
+        text-align: center;
+        color: #999!important;
+        font-size: 18px;
+        text-decoration: none;
+        font-family: 'kanitmedium';
+        margin-left:88px;
+        margin-right: 0px;
+    }
+
+    .btn-modal-1{
+        background-color:#f7931e;
+        border:none;
+        color: #fff;
+        font-size: 18px;
+        width: 100%;
+        height:40px;
+        border-radius: 5px;
+    }
+
+    .btn-modal-1:hover{
+        background-color:#fff;
+        border:none;
+        color: #f7931e;
+        border:2px solid #f7931e;
+        font-size: 18px;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .btn-modal-2{
+        background-color:#2471A3;
+        border:none;
+        color: #fff;
+        font-size: 18px;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .btn-modal-2:hover{
+        background-color:#fff;
+        border:none;
+        color: #2471A3;
+        font-size: 18px;
+        border:2px solid #2471A3;
+        width: 100%;
+        height:40px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .modal-form{
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        border:1px solid#666;
+        color: #333;
+        font-size: 18px;
+    }
+    /*--------------------------
+    ------ END MODAL 414 -------
+    ----------------------------*/
+
+
+    /*--------------------------
+    ------- FOOTER 414 ---------
+    ----------------------------*/
+    .footer-font-h{
+        font-size: 24px;
+        color: white;
+        font-family: 'kanitlight';
+        text-align: center;
+    }
+
+    .footer-font{
+        font-size: 17px;
+        color: #F0F3F4;
+        font-family: 'kanitlight';
+        text-align: center;
+    }
+
+    .footer-magin-top{
+        margin-top: 15px;
+    }
+
+    .footer-magin-top2{
+        margin-top: 8px;
+    }
+
+    /*--------------------------
+    ------- END FOOTER 414 -----
+    ----------------------------*/
+
+
+    /*--------------------------
+    ---------- HOME 414 --------
+    ----------------------------*/
+    .home-w-h-2{
+        width: 60px;
+        height: 40px;
+    }
+
+    .home-font-h{
+        color: #4d4d4d;
+        font-size: 24px;
+        font-family: 'kanitmedium';
+    }
+
+    .home-font-1{
+        color: #4d4d4d;
+        font-size: 18px;
+        font-family: 'kanitlight';
+    }
+
+    .home-font-2{
+        color: #4d4d4d;
+        font-size: 26px;
+        margin-top: 13px;
+        font-family: 'kanitmedium';
+    }
+
+    .home-font-5{
+        color: #4d4d4d;
+        font-size: 16px;
+    }
+
+    .home-font-6{
+        color: #E74C3C;
+        font-size: 16px;
+    }
+
+    .home-font-7{
+        color: #4d4d4d;
+        font-size: 20px;
+        font-family: 'kanitmedium';
+    }
+
+    .home-padding{
+        padding: 30px;
+    }
+
+    .home-font-1{
+        color: #4d4d4d;
+        font-size: 18px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: 1s ease;
+      background-color: #fff;
+      width:100%;
+      margin-left: 0px;
+      padding-top: 30px;
+      margin-top: 10px;
+    }
+
+    .home-block{
+      height: 350px;
+      width: 100%;
+      box-shadow:  3px 3px 15px #888888;
+      margin-left: 0px;
+      
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: 350px;
+      margin-top: 20px;
+    }
+
+    .home-block:hover .overlay {
+       opacity: 1;
+    }
+
+    .text-block {
+        position: absolute;
+        width: 100%;
+        height:100px; 
+        padding-top: 10px;
+        background-color: #f7931e;
+        color: white;
+        text-align: center;
+        opacity: 0.9;
+        font-size: 20px;
+        margin-top: -100px;
+    }
+
+    .btn-home-1{
+        background-color:#f7931e;
+        border:none;
+        color: #fff;
+        font-size: 16px;
+        width: 200px;
+        height:40px;
+        border-radius: 7px;
+    }
+
+    .btn-home-1:hover{
+        background-color:#fff;
+        border:none;
+        color: #f7931e;
+        border:2px solid #f7931e;
+        font-size: 16px;
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .home-m-t{
+        margin-top: 80px;
+    }
+
+    .home-m-t2{
+        margin-top: 0px;
+    }
+
+    .home-m-t3{
+        margin-top: 0px;
+    }
+
+    .home-m-t4{
+        margin-top: 90px;
+    }
+
+    .home-m-t5{
+        margin-top: 20px;
+    }
+
+    .home-m-t-btn{
+        margin-top: 25px;
+    }
+       
+    .home-bg{
+        background-image: none; 
+        background-color: #fff; 
+        width: 100%;
+        height: 1600px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .overlay2{
+        background-color:#fff;
+    }
+
+    .home-padding-top{
+        padding-top: 0px;
+    }
+
+    .home-m-t3{
+        margin-top: 0px;
+    }
+
+    .modal-block{
+        margin-top: 2rem ; 
+        margin-left: 27px;
+    }
+
+    .home-modal-m-l2{
+        padding-left:34px;
+    }
+
+    .home-modal-m-l3{
+        padding-left:50px;
+    }
+    /*--------------------------
+    ------ END HOME 414 --------
+    ----------------------------*/
+
+    /*----------------------------------
+    --------- ARTICLE 414 --------------
+    -------------------------------------*/
+    .article-img-size{
+        width: 100%;
+        height:auto;
+    }
+
+    .article-pb{
+        padding-bottom: 100px;
+    }
+
+    .article2-m-t{
+        margin-top: 20px;
+    }
+    /*------------------------------------
+    ----------- END ARTICLE 414 -----------
+    ---------------------------------------*/
+
+
+    /*------------------------------------
+    ----------- ARTICLE2 414 -----------
+    ---------------------------------------*/
+    .article2-font{
+        font-size: 16px;
+        color: #4d4d4d;
+    }
+
+    .article2-font2{
+        font-size: 16px;
+        color: #f7931e;
+    }
+
+    .article2-font2:hover{
+        font-size: 16px;
+        color: #E67E22;
+        text-decoration: none;
+    }
+
+    .article2-m-t2{
+        margin-top: 0px;
+    }
+
+    .article2-img-size{
+        width: 100%;
+        height:auto;
+    }
+
+    .article2-overflow{
+        overflow: hidden;
+        height: 30px;
+    }
+    /*----------------------------------
+    ------- END ARTICLE2 414 -----------
+    -------------------------------------*/
+
+
+    /*---------------------------------
+    ----------- EDIT 414 --------------
+    ----------------------------------*/
+    .edit-font1{
+        font-size: 26px;
+        color: #4d4d4d;
+        font-family: 'kanitmedium';
+        text-align: center;
+    }
+
+    .edit-font2{
+        font-size: 19px;
+        color: #4d4d4d;
+    }
+
+    .edit-form{
+        width: 100%;
+        height: 50px;
+        border:1px solid #A6ACAF; 
+        padding: 10px;
+        font-size: 18px;
+        font-family: 'kanitlight';
+        color: #4d4d4d;
+    }
+
+    .edit-p-t{
+        padding-top:25px; 
+    }
+
+    .edit-p-b{
+        padding-bottom:100px; 
+    }
+
+    .btn-edit{
+        background-color:#f7931e;
+        border:none;
+        color: #fff;
+        font-size: 18px;
+        width: 170px;
+        height:50px;
+        border-radius: 5px;
+    }
+
+    .btn-edit:hover{
+        background-color:#fff;
+        border:none;
+        color: #f7931e;
+        border:2px solid #f7931e;
+        font-size: 18px;
+        width: 170px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .edit-padding{
+        padding: 0px;
+    }
+    /*--------------------------------
+    -------- END EDIT 414 ------------
+    ---------------------------------*/
+
+
+
+    /*--------------------------------
+    ---------- COURSE 414 ------------
+    ----------------------------------*/
+    .course-font1{
+        font-size: 28px;
+        color: #4d4d4d;
+        font-family: 'kanitmedium';
+        text-align: center;
+    }
+
+    .course-font2{
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+        height: 34px;
+    }
+
+    .course-font3{
+        font-size: 15px;
+        color: #fff;
+        text-align: center;
+        font-family: 'kanitlight';
+        overflow: hidden;
+        height: 43px;
+    }
+
+    .course-p-t{
+        padding-top:20px; 
+    }
+
+    .course-p-b{
+        padding-bottom:100px; 
+    }
+
+    .course-padding{
+        padding: 0px;
+    }
+
+    .course-padding2{
+        padding: 10px;
+    }
+    /*--------------------------------
+    -------- END COURSE 414 ---------
+    ----------------------------------*/
+
+
+    /*---------------------------------
+    --------- COURSE (2) 414 -----------
+    ----------------------------------*/
+    .course2-font1{
+        font-size: 22px;
+        color: #4d4d4d;
+        font-family: 'kanitmedium';
+    }
+
+    .course2-font2{
+        font-size: 18px;
+        color: #626567;
+        font-family: 'kanitlight';
+    }
+
+    .course2-font3{
+        font-size: 15px;
+        color: #626567;
+        font-family: 'kanitlight';
+    }
+
+    .course2-padding{
+        padding: 20px;
+    }
+
+    .course2-iframe-size{
+        width: 100%;
+        height:240px;
+        border:none;
+    }
+    /*----------------------------------
+    -------- END COURSE (2) 414 ---------
+    ------------------------------------*/
+
+}
+
+
+@media(max-width: 375px){
+    .wrapper {
+        min-height: calc(100vh - 270px);
+    }
+
+    /*--------------------------
+    ------- NAVBAR 375 ---------
+    ----------------------------*/
+  
+    /*--------------------------
+    ------- END NAVBAR 375 -----
+    ----------------------------*/
+
+    /*--------------------------
+    ------ FOOTER 375 ----------
+    ----------------------------*/
+
+    /*--------------------------
+    ------ END FOOTER 375 ------
+    ----------------------------*/
+
+    /*--------------------------
+    --------- MODAL 375 --------
+    ----------------------------*/
+    .nav-pills .nav-item .active{
+        font-size: 18px;
+        font-family: 'kanitmedium';
+        border-bottom: 2px solid #81c784;
+        color: #333;
+    }
+
+    .modal-nav-link {
+        text-align: center;
+        font-size: 18px;
+        color: #4d4d4d !important;
+        font-family: 'kanitlight';
+        margin-left: 83px;
+        margin-right: 75px;
+        font-family: 'kanitmedium';
+        margin-left:75px;
+        margin-right: 0px;
+    }
+
+    .modal-nav-link:hover {
+        text-align: center;
+        color: #999!important;
+        font-size: 18px;
+        text-decoration: none;
+        font-family: 'kanitmedium';
+        margin-left:75px;
+        margin-right: 0px;
+    }
+
+    .modal-form{
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        border:1px solid#666;
+        color: #333;
+        font-size: 17px;
+    }
+    /*----------------------------
+    -------- END MODAL 375 -------
+    ------------------------------*/
+
+
+    /*-----------------------------
+    ------------ HOME 375 ----------
+    -------------------------------*/
+    .home-font-h{
+        color: #4d4d4d;
+        font-size: 24px;
+        font-family: 'kanitmedium';
+    }
+
+    .home-font-1{
+        color: #4d4d4d;
+        font-size: 18px;
+        font-family: 'kanitlight';
+    }
+
+    .home-font-2{
+        color: #4d4d4d;
+        font-size: 24px;
+        margin-top: 13px;
+        font-family: 'kanitmedium';
+    }
+
+    .home-font-5{
+        color: #4d4d4d;
+        font-size: 15px;
+    }
+
+    .home-font-6{
+        color: #E74C3C;
+        font-size: 15px;
+    }
+
+    .home-font-7{
+        color: #4d4d4d;
+        font-size: 16px;
+        font-family: 'kanitmedium';
+    }
+
+    .home-font-1{
+        color: #4d4d4d;
+        font-size: 16px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: 1s ease;
+      background-color: #fff;
+      width: 100%;
+      margin-left: 0px;
+      padding-top: 30px;
+    }
+
+    .home-block{
+      height: 320px;
+      width: 100%;
+      box-shadow:  3px 3px 15px #888888;
+      margin-left: 0px;
+      
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: 320px;
+    }
+
+    .home-block:hover .overlay {
+      opacity: 1;
+    }
+
+    .text-block {
+        position: absolute;
+        width: 100%;
+        height:100px; 
+        padding-top: 10px;
+        background-color: #f7931e;
+        color: white;
+        text-align: center;
+        opacity: 0.9;
+        font-size: 20px;
+        margin-top: -100px;
+    }
+
+    .btn-home-1{
+        background-color:#f7931e;
+        border:none;
+        color: #fff;
+        font-size: 18px;
+        width: 200px;
+        height:40px;
+        border-radius: 7px;
+    }
+
+    .btn-home-1:hover{
+        background-color:#fff;
+        border:none;
+        color: #f7931e;
+        border:2px solid #f7931e;
+        font-size: 18px;
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .home-m-t{
+        margin-top: 80px;
+    }
+
+    .home-bg{
+        background-image: none; 
+        background-color: #fff; 
+        width: 100%;
+        height: 1450px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .modal-block{
+        margin-top: 2rem ; 
+        margin-left: 8px;
+    }
+
+    .home-m-t5{
+        margin-top: 15px;
+    }
+
+    .home-m-t-btn{
+        margin-top: 20px;
+    }
+  
+    /*-----------------------------
+    --------- END HOME 375 --------
+    ------------------------------*/
+
+    /*---------------------------------
+    ----------- ARTICLE2 375 ----------
+    ------------------------------------*/
+    .article-img-size{
+        width: 100%;
+        height:200px;
+    }
+
+    .article-font{
+        font-size: 14px;
+        color: #4d4d4d;
+    }
+
+    .article-font2{
+        font-size: 14px;
+        color: #f7931e;
+    }
+
+    .article-font2:hover{
+        font-size: 14px;
+        color: #E67E22;
+        text-decoration: none;
+    }
+    /*------------------------------------
+    --------- END ARTICLE2 375 -------------
+    ---------------------------------------*/
+
+
+    /*------------------------------------
+    ----------- ARTICLE2 375 -----------
+    ---------------------------------------*/
+    .article-img-size{
+        width: 100%;
+        height:auto;
+    }
+
+    .article2-font{
+        font-size: 14px;
+        color: #4d4d4d;
+    }
+
+    .article2-font2{
+        font-size: 14px;
+        color: #f7931e;
+    }
+
+    .article2-font2:hover{
+        font-size: 14px;
+        color: #E67E22;
+        text-decoration: none;
+    }
+
+    .article2-m-t2{
+        margin-top: 0px;
+    }
+
+    .article2-overflow{
+        overflow: hidden;
+        height: 30px;
+    }
+    /*------------------------------------
+    --------- END ARTICLE2 375 -------------
+    ---------------------------------------*/
+
+
+    /*------------------------------------
+    -------------- EDIT 375 -------------
+    ---------------------------------------*/
+     .edit-padding{
+        padding: 0px;
+    }
+    /*------------------------------------
+    ----------- END EDIT 375 -------------
+    ---------------------------------------*/
+
+
+
+    /*------------------------------------
+    ----------- COURSE (2) 375 ------------
+    -------------------------------------*/
+    .course2-font1{
+        font-size: 20px;
+        color: #4d4d4d;
+        font-family: 'kanitmedium';
+    }
+
+    .course2-font2{
+        font-size: 17px;
+        color: #626567;
+        font-family: 'kanitlight';
+    }
+
+    .course2-font3{
+        font-size: 14px;
+        color: #626567;
+        font-family: 'kanitlight';
+    }
+
+    .course2-padding{
+        padding: 20px;
+    }
+
+    .course2-iframe-size{
+        width: 100%;
+        height: 220px;
+        border:none;
+    }
+
+    .action-overflow{
+        overflow: hidden;
+        height: 70px;
+        padding-top: 5px;
+    }
+    /*-----------------------------------
+    -------- END COURSE (2) 375 ---------
+    -------------------------------------*/
+
+}
+
+
+
+@media (max-width: 320px ){
+
+    .wrapper {
+         min-height: calc(100vh - 270px);
+     }
+
+    /*--------------------------
+    --------- MODAL 320 --------
+    ----------------------------*/
+    .nav-pills .nav-item .active{
+        font-size: 17px;
+        font-family: 'kanitmedium';
+        border-bottom: 2px solid #81c784;
+        color: #333;
+    }
+
+    .modal-nav-link {
+        text-align: center;
+        font-size: 17px;
+        color: #4d4d4d !important;
+        font-family: 'kanitlight';
+        margin-left: 83px;
+        margin-right: 75px;
+        font-family: 'kanitmedium';
+        margin-left:59px;
+        margin-right: 0px;
+    }
+
+    .modal-nav-link:hover {
+        text-align: center;
+        color: #999!important;
+        font-size: 17px;
+        text-decoration: none;
+        font-family: 'kanitmedium';
+        margin-left:59px;
+        margin-right: 0px;
+    }
+
+    .btn-modal-1{
+        background-color:#f7931e;
+        border:none;
+        color: #fff;
+        font-size: 15px;
+        width: 100%;
+        height:40px;
+        border-radius: 5px;
+    }
+
+    .btn-modal-1:hover{
+        background-color:#fff;
+        border:none;
+        color: #f7931e;
+        border:2px solid #f7931e;
+        font-size: 15px;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .btn-modal-2{
+        background-color:#2471A3;
+        border:none;
+        color: #fff;
+        font-size: 15px;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .btn-modal-2:hover{
+        background-color:#fff;
+        border:none;
+        color: #2471A3;
+        font-size: 15px;
+        border:2px solid #2471A3;
+        width: 100%;
+        height:40px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .modal-form{
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        border:1px solid#666;
+        color: #333;
+        font-size: 15px;
+    }
+    /*--------------------------
+    ------ END MODAL 320 -------
+    ----------------------------*/
+
+
+    /*--------------------------
+    ---------  HOME 320 --------
+    ----------------------------*/
+    .home-w-h-2{
+        width: 45px;
+        height: 30px;
+    }
+
+    .home-font-h{
+        color: #4d4d4d;
+        font-size: 22px;
+        font-family: 'kanitmedium';
+    }
+
+    .home-font-1{
+        color: #4d4d4d;
+        font-size: 15px;
+    }
+
+    .home-font-2{
+        color: #4d4d4d;
+        font-size: 22px;
+        margin-top: 13px;
+        font-family: 'kanitmedium';
+    }
+
+    .home-font-5{
+        color: #4d4d4d;
+        font-size: 14px;
+    }
+
+    .home-font-6{
+        color: #E74C3C;
+        font-size: 14px;
+    }
+
+    .home-font-7{
+        color: #4d4d4d;
+        font-size: 16px;
+        font-family: 'kanitmedium';
+    }
+
+    .home-padding{
+        padding: 30px;
+    }
+
+    .home-m-t{
+        margin-top: 80px;
+    }
+
+    .home-m-t5{
+        margin-top: 10px;
+    }
+
+    .home-m-t-btn{
+        margin-top: 15px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: 1s ease;
+      background-color: #fff;
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .home-block{
+      height: 300px;
+      width: 100%;
+      box-shadow:  3px 3px 15px #888888;
+      margin-left: 0px;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: 300px;
+    }
+
+    .home-block:hover .overlay {
+      opacity: 1;
+    }
+
+    .text-block {
+        position: absolute;
+        width: 100%;
+        height:100px; 
+        padding-top: 10px;
+        background-color: #f7931e;
+        color: white;
+        text-align: center;
+        opacity: 0.9;
+        font-size: 20px;
+        margin-top: -100px;
+    }
+
+    .btn-home-1{
+        background-color:#f7931e;
+        border:none;
+        color: #fff;
+        font-size: 16px;
+        width: 200px;
+        height:40px;
+        border-radius: 7px;
+    }
+
+    .btn-home-1:hover{
+        background-color:#fff;
+        border:none;
+        color: #f7931e;
+        border:2px solid #f7931e;
+        font-size: 16px;
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .home-bg{
+        background-image: none; 
+        background-color: #fff; 
+        width: 100%;
+        height: 1360px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .modal-block{
+        margin-top: 2em ; 
+        margin-left: 10px;
+    }
+
+    .home-modal-font1{
+        font-size: 18px;
+        color: #4d4d4d;
+        padding-top: 55px;
+        font-family: 'kanitmedium';
+        text-align: right;
+    }
+
+    .home-modal-font2{
+        font-size: 14px;
+        color: #4d4d4d;
+    }
+
+    .home-modal-font3{
+        font-size: 14px;
+        color: #4d4d4d;
+    }
+
+    .modal-img-size{
+        width:50px; 
+        height:50px;
+        margin-top: 28px;
+    }
+
+    .modal-w-h{
+        width:300px;
+        height:230px;
+        border-radius: 0px;
+    }
+
+    .modal-padding{
+        padding: 5px;
+    }
+
+    .home-modal-m-l{
+        padding-left: 50px;
+    }
+
+    .home-modal-m-l2{
+        padding-left:35px;
+    }
+
+    .home-modal-m-l3{
+        padding-left:50px;
+    }
+    /*--------------------------
+    ------ END HOME 320 --------
+    ----------------------------*/
+
+
+    /*----------------------------------
+    --------- ARTICLE 320 --------------
+    -------------------------------------*/
+    .article-img-size{
+        width: 100%;
+        height:auto;
+    }
+
+    .article-pb{
+        padding-bottom: 100px;
+    }
+    /*------------------------------------
+    ----------- END ARTICLE 320 -----------
+    ---------------------------------------*/
+
+
+    /*------------------------------------
+    ----------- ARTICLE2 320 -----------
+    ---------------------------------------*/
+    .article2-img-size{
+        width: 100%;
+        height:auto;
+    }
+
+    .article2-overflow{
+        overflow: hidden;
+        height: 30px;
+    }
+    /*------------------------------------
+    ---------- END ARTICLE2 320 ------------
+    ---------------------------------------*/
+
+
+    /*---------------------------------
+    ------------ EDIT 320 --------------
+    ----------------------------------*/
+    .edit-border{
+        border-radius: 0px;
+    }
+
+    .edit-font1{
+        font-size: 24px;
+        color: #4d4d4d;
+        font-family: 'kanitmedium';
+        text-align: center;
+    }
+
+    .edit-font2{
+        font-size: 17px;
+        color: #4d4d4d;
+    }
+
+    .edit-border-bottom{
+        border-bottom: 4px solid  #4d4d4d;
+    }
+
+    .edit-form{
+        width: 100%;
+        height: 50px;
+        border:1px solid #A6ACAF; 
+        padding: 10px;
+        font-size: 16px;
+        font-family: 'kanitlight';
+        color: #4d4d4d;
+    }
+
+    .btn-edit{
+        background-color:#f7931e;
+        border:none;
+        color: #fff;
+        font-size: 17px;
+        width: 170px;
+        height:50px;
+        border-radius: 5px;
+    }
+
+    .btn-edit:hover{
+        background-color:#fff;
+        border:none;
+        font-size: 17px;
+        color: #f7931e;
+        border:2px solid #f7931e;
+        font-size: 20px;
+        width: 170px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .edit-padding{
+        padding: 0px;
+    }
+    /*---------------------------------
+    ---------- END EDIT 320--------------
+    ----------------------------------*/
+
+    /*--------------------------------
+    ---------- COURSE 320 ------------
+    ----------------------------------*/
+    .course-font1{
+        font-size: 26px;
+        color: #4d4d4d;
+        font-family: 'kanitmedium';
+        text-align: center;
+    }
+
+    .course-font2{
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+        height: 30px;
+    }
+
+    .course-font3{
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        font-family: 'kanitlight';
+        overflow: hidden;
+        height: 43px;
+    }
+    /*--------------------------------
+    -------- END COURSE 320 ---------
+    ----------------------------------*/
+
+    /*------------------------------------
+    ----------- COURSE (2) 320 ------------
+    -------------------------------------*/
+    .course2-font1{
+        font-size: 18px;
+        color: #4d4d4d;
+        font-family: 'kanitmedium';
+    }
+
+    .course2-font2{
+        font-size: 14px;
+        color: #626567;
+        font-family: 'kanitlight';
+    }
+
+    .course2-font3{
+        font-size: 14px;
+        color: #626567;
+        font-family: 'kanitlight';
+    }
+
+    .course2-p-t2{
+        padding-top:20px; 
+    }
+
+    .course2-p-b2{
+        padding-bottom:20px; 
+    }
+
+    .course2-padding{
+        padding: 20px;
+    }
+
+    .course2-iframe-size{
+        width: 100%;
+        height: 200px;
+        border:none;
+    }
+
+    .action-overflow{
+        overflow: hidden;
+        height: 65px;
+        padding-top: 5px;
+    }
+    /*-------------------------------------
+    ---------- END COURSE (2) 320 -----------
+    --------------------------------------*/
+
+
+}
+
