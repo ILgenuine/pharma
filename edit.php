@@ -31,8 +31,8 @@
                               </div>
                               <div class="row">
                                   <div class="col-xl-6 col-md-6 col-lg-6 col-12 mt-3">
-                                      <div class="edit-font2">อีเมล์</div>
-                                      <input type="email" class = "edit-form" name="" placeholder="อีเมล์">
+                                      <div class="edit-font2">อีเมล</div>
+                                      <input type="email" class = "edit-form" name="" placeholder="อีเมล">
                                   </div>
                                   <div class="col-xl-6 col-md-6 col-lg-6 col-12 mt-3">
                                       <div class="edit-font2">เบอร์โทรศัพท์</div>

@@ -38,7 +38,7 @@
 body {
     font-family:'kanitregular';
     height: 100vh;
-    background-image:url("/phama/assets/images/pharma-bg.jpg"); 
+    background-image:url("../../assets/images/pharma-bg.jpg");
     background-size: cover;
 }
 
@@ -115,7 +115,7 @@ body {
     width: 140px;
     height: 50px;
     border-radius: 5px;
-    
+
 }
 
 .nav-logo{
@@ -181,7 +181,7 @@ body {
     background-color: #fff;
     min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;   
+    z-index: 1;
     left:40px;
     margin:-20px;
 }
@@ -415,7 +415,7 @@ body {
 }
 
 .home-bg{
-    background-image: url("/phama/assets/images/pharma-03.jpg");
+    background-image: url("../../assets/images/pharma-03.jpg");
     background-size: cover;
     width: 100%;
     height: 770px;
@@ -498,7 +498,7 @@ body {
 .text-block {
     position: absolute;
     width: 100%;
-    height:100px; 
+    height:100px;
     padding-top: 10px;
     background-color: #f7931e;
     color: white;
@@ -556,7 +556,7 @@ body {
 }
 
 .modal-img-size{
-    width:60px; 
+    width:60px;
     height:60px;
     margin-top: 40px;
 }
@@ -705,7 +705,7 @@ body {
 .edit-form{
     width: 100%;
     height: 50px;
-    border:1px solid #A6ACAF; 
+    border:1px solid #A6ACAF;
     padding: 10px;
     font-size: 20px;
     font-family: 'kanitlight';
@@ -713,11 +713,11 @@ body {
 }
 
 .edit-p-t{
-    padding-top:100px; 
+    padding-top:100px;
 }
 
 .edit-p-b{
-    padding-bottom:200px; 
+    padding-bottom:200px;
 }
 
 .btn-edit{
@@ -728,6 +728,7 @@ body {
     width: 170px;
     height:50px;
     border-radius: 5px;
+    transition: all 0.5s;
 }
 
 .btn-edit:hover{
@@ -777,15 +778,15 @@ body {
 }
 
 .course-background{
-    background-color:#f7931e; 
+    background-color:#f7931e;
 }
 
 .course-p-t{
-    padding-top:140px; 
+    padding-top:140px;
 }
 
 .course-p-b{
-    padding-bottom:295px; 
+    padding-bottom:295px;
 }
 
 .course-img-size{
@@ -862,23 +863,23 @@ body {
 }
 
 .course2-p-t{
-    padding-top:140px; 
+    padding-top:140px;
 }
 
 .course2-p-t2{
-    padding-top:50px; 
+    padding-top:50px;
 }
 
 .course2-p-t3{
-    padding-top:3px;  
+    padding-top:3px;
 }
 
 .course2-p-b{
-    padding-bottom:295px; 
+    padding-bottom:295px;
 }
 
 .course2-p-b2{
-    padding-bottom:50px; 
+    padding-bottom:50px;
 }
 
 .course2-padding{
@@ -929,7 +930,7 @@ body {
         margin-top: 40px;
         margin-left: 20px;
     }
-   
+
     /*---------------------------
     ------- END NAVBAR 1366 -----
     -----------------------------*/
@@ -963,7 +964,7 @@ body {
     /*--------------------------
     --------- NAVBAR 1024 ------
     ----------------------------*/
-   
+
     /*--------------------------
     ----- END NAVBAR 1024 ------
     ----------------------------*/
@@ -987,7 +988,6 @@ body {
     }
 
     .home-bg{
-        background-image: url("/phama/assets/images/pharma-03.jpg");
         background-size: cover;
         width: 100%;
         height: 720px;
@@ -1041,7 +1041,7 @@ body {
     .text-block {
         position: absolute;
         width: 431px;
-        height:100px; 
+        height:100px;
         padding-top: 10px;
         background-color: #f7931e;
         color: white;
@@ -1140,7 +1140,7 @@ body {
     }
     /*--------------------------
     -------- NAVBAR 768 --------
-    ----------------------------*/    
+    ----------------------------*/
     .navbar-nav a{
         color: #4d4d4d;
         font-size: 20px;
@@ -1211,7 +1211,7 @@ body {
 
     /*----------------------------
     -------- NAVBAR(2) 768 --------
-    ------------------------------*/    
+    ------------------------------*/
     .dropbtn {
         background-color: #f7931e;
         color: white;
@@ -1234,7 +1234,7 @@ body {
         background-color: #fff;
         min-width: 200px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;   
+        z-index: 1;
         left:40px;
         margin:-20px;
         padding: 10px;
@@ -1265,7 +1265,7 @@ body {
     }
     /*----------------------------
     ------- END NAVBAR 768 --------
-    ------------------------------*/    
+    ------------------------------*/
 
 
     /*----------------------------
@@ -1381,7 +1381,7 @@ body {
     .text-block {
         position: absolute;
         width: 320px;
-        height:100px; 
+        height:100px;
         padding-top: 10px;
         background-color: #f7931e;
         color: white;
@@ -1414,7 +1414,6 @@ body {
     }
 
     .home-bg{
-        background-image: url("/phama/assets/images/pharma-03.jpg");
         background-size: cover;
         width: 100%;
         height:548px;
@@ -1450,11 +1449,11 @@ body {
     ----------- EDIT 768 --------------
     ----------------------------------*/
     .edit-p-t{
-        padding-top:100px; 
+        padding-top:100px;
     }
 
     .edit-p-b{
-        padding-bottom:100px; 
+        padding-bottom:100px;
     }
 
     .edit-padding{
@@ -1472,7 +1471,7 @@ body {
     .course2-iframe-size{
         width: 100%;
         height: 380px;
-        
+
     }
     /*------------------------------------
     --------- END COURSE (2) 768 ----------
@@ -1484,7 +1483,7 @@ body {
 @media(max-width: 414px){
     /*--------------------------
     ------ NAVBAR 414 ----------
-    ----------------------------*/ 
+    ----------------------------*/
     .navbar-nav a{
         color: #4d4d4d;
         font-size: 18px;
@@ -1555,7 +1554,7 @@ body {
 
     /*-----------------------------
     --------- NAVBAR (2) 414 --------
-    --------------------------------*/    
+    --------------------------------*/
     .dropbtn {
         background-color: #f7931e;
         color: white;
@@ -1578,7 +1577,7 @@ body {
         background-color: #fff;
         min-width: 100px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;   
+        z-index: 1;
         left:40px;
         margin:-20px;
     }
@@ -1800,7 +1799,7 @@ body {
       width: 100%;
       box-shadow:  3px 3px 15px #888888;
       margin-left: 0px;
-      
+
     }
 
     .image {
@@ -1817,7 +1816,7 @@ body {
     .text-block {
         position: absolute;
         width: 100%;
-        height:100px; 
+        height:100px;
         padding-top: 10px;
         background-color: #f7931e;
         color: white;
@@ -1871,10 +1870,10 @@ body {
     .home-m-t-btn{
         margin-top: 25px;
     }
-       
+
     .home-bg{
-        background-image: none; 
-        background-color: #fff; 
+        background-image: none;
+        background-color: #fff;
         width: 100%;
         height: 1600px;
         margin-bottom: 0px;
@@ -1894,7 +1893,7 @@ body {
     }
 
     .modal-block{
-        margin-top: 2rem ; 
+        margin-top: 2rem ;
         margin-left: 27px;
     }
 
@@ -1984,7 +1983,7 @@ body {
     .edit-form{
         width: 100%;
         height: 50px;
-        border:1px solid #A6ACAF; 
+        border:1px solid #A6ACAF;
         padding: 10px;
         font-size: 18px;
         font-family: 'kanitlight';
@@ -1992,11 +1991,11 @@ body {
     }
 
     .edit-p-t{
-        padding-top:25px; 
+        padding-top:25px;
     }
 
     .edit-p-b{
-        padding-bottom:100px; 
+        padding-bottom:100px;
     }
 
     .btn-edit{
@@ -2057,11 +2056,11 @@ body {
     }
 
     .course-p-t{
-        padding-top:20px; 
+        padding-top:20px;
     }
 
     .course-p-b{
-        padding-bottom:100px; 
+        padding-bottom:100px;
     }
 
     .course-padding{
@@ -2121,7 +2120,7 @@ body {
     /*--------------------------
     ------- NAVBAR 375 ---------
     ----------------------------*/
-  
+
     /*--------------------------
     ------- END NAVBAR 375 -----
     ----------------------------*/
@@ -2241,7 +2240,7 @@ body {
       width: 100%;
       box-shadow:  3px 3px 15px #888888;
       margin-left: 0px;
-      
+
     }
 
     .image {
@@ -2257,7 +2256,7 @@ body {
     .text-block {
         position: absolute;
         width: 100%;
-        height:100px; 
+        height:100px;
         padding-top: 10px;
         background-color: #f7931e;
         color: white;
@@ -2293,8 +2292,8 @@ body {
     }
 
     .home-bg{
-        background-image: none; 
-        background-color: #fff; 
+        background-image: none;
+        background-color: #fff;
         width: 100%;
         height: 1450px;
         margin-bottom: 0px;
@@ -2302,7 +2301,7 @@ body {
     }
 
     .modal-block{
-        margin-top: 2rem ; 
+        margin-top: 2rem ;
         margin-left: 8px;
     }
 
@@ -2313,7 +2312,7 @@ body {
     .home-m-t-btn{
         margin-top: 20px;
     }
-  
+
     /*-----------------------------
     --------- END HOME 375 --------
     ------------------------------*/
@@ -2626,7 +2625,7 @@ body {
     .text-block {
         position: absolute;
         width: 100%;
-        height:100px; 
+        height:100px;
         padding-top: 10px;
         background-color: #f7931e;
         color: white;
@@ -2658,8 +2657,8 @@ body {
     }
 
     .home-bg{
-        background-image: none; 
-        background-color: #fff; 
+        background-image: none;
+        background-color: #fff;
         width: 100%;
         height: 1360px;
         margin-bottom: 0px;
@@ -2667,7 +2666,7 @@ body {
     }
 
     .modal-block{
-        margin-top: 2em ; 
+        margin-top: 2em ;
         margin-left: 10px;
     }
 
@@ -2690,7 +2689,7 @@ body {
     }
 
     .modal-img-size{
-        width:50px; 
+        width:50px;
         height:50px;
         margin-top: 28px;
     }
@@ -2780,7 +2779,7 @@ body {
     .edit-form{
         width: 100%;
         height: 50px;
-        border:1px solid #A6ACAF; 
+        border:1px solid #A6ACAF;
         padding: 10px;
         font-size: 16px;
         font-family: 'kanitlight';
@@ -2868,11 +2867,11 @@ body {
     }
 
     .course2-p-t2{
-        padding-top:20px; 
+        padding-top:20px;
     }
 
     .course2-p-b2{
-        padding-bottom:20px; 
+        padding-bottom:20px;
     }
 
     .course2-padding{
@@ -2896,4 +2895,3 @@ body {
 
 
 }
-

@@ -23,11 +23,11 @@
 
                 <div class="row course2-p-t2 course2-p-b2 fadeIn animated">
                       <div class="col-xl-1 col-lg-1 col-md-1"></div>
-                      <div class="col-xl-10 col-lg-10 col-10 col-12">           
-                          <iframe class="course2-iframe-size" src="https://www.youtube.com/embed/o7iL2KzDh38"></iframe>      
-                      </div>   
-                      <div class="col-xl-1 col-lg-1 col-md-1"></div>      
-                </div>    
+                      <div class="col-xl-10 col-lg-10 col-10 col-12">
+                        <iframe  class="course2-iframe-size" src="https://www.youtube.com/embed/VgVQKCcfwnU"></iframe>
+                      </div>
+                      <div class="col-xl-1 col-lg-1 col-md-1"></div>
+                </div>
 
                 <div class="row course2-border-left fadeIn animated">
                     <a href="" class="action action-overflow">
@@ -55,7 +55,7 @@
                                 <i class="fa fa-eye mr-1" aria-hidden="true"></i>150 ครั้ง
                            </div>
                         </div>
-                    </a> 
+                    </a>
                 </div>
                 <div class="row course2-border-left mt-5 fadeIn animated">
                      <a href="" class="action action-overflow">

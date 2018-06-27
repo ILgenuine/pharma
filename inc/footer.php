@@ -10,11 +10,11 @@
 		    	</div>
 		    	<div class="col-xl-4 col-lg-5 col-md-5 col-12">
 		    		<div class="footer-font footer-magin-top">โทร +66(0) 2 123 4567-8</div>
-		    		<div class="footer-font footer-magin-top2">อีเมลล์ : phamaplus@gmail.com</div>
+		    		<div class="footer-font footer-magin-top2">อีเมล : phamaplus@gmail.com</div>
 		    	</div>
 		    </div>
     	</div>
-	
+
     <!-- END-FOOTER--->
 
 </footer>
